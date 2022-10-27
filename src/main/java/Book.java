@@ -1,8 +1,16 @@
 public class Book extends Product {
-    private String author;
+    public String Author;
 
-    public Book(int id, int cost, String name, String author) {
-        super(id, cost, name);
-        this.author = author;
+    public Book(int id, String name, int price, String author) {
+        super(id, name, price);
+        Author = author;
+    }
+
+    public String getAuthor() {
+        return Author;
+    }
+
+    public void setAuthor(String author) {
+        Author = author;
     }
 }
